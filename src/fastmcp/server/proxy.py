@@ -178,7 +178,7 @@ class FastMCPProxy(FastMCP):
         self.client = client
 
     async def get_tools(self) -> dict[str, Tool]:
-        tools = await super().get_tools()
+        tools = super().get_tools()
 
         async with self.client:
             try:
@@ -195,7 +195,7 @@ class FastMCPProxy(FastMCP):
         return tools
 
     async def get_resources(self) -> dict[str, Resource]:
-        resources = await super().get_resources()
+        resources = super().get_resources()
 
         async with self.client:
             try:
@@ -212,7 +212,7 @@ class FastMCPProxy(FastMCP):
         return resources
 
     async def get_resource_templates(self) -> dict[str, ResourceTemplate]:
-        templates = await super().get_resource_templates()
+        templates = super().get_resource_templates()
 
         async with self.client:
             try:
@@ -229,7 +229,7 @@ class FastMCPProxy(FastMCP):
         return templates
 
     async def get_prompts(self) -> dict[str, Prompt]:
-        prompts = await super().get_prompts()
+        prompts = super().get_prompts()
 
         async with self.client:
             try:
